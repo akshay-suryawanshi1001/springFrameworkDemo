@@ -1,9 +1,11 @@
-package springFrameworkDemo.xmlbasedConfig;
+package springFrameworkDemo.annoBasedConfig;
 
 import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
-@Scope(scopeName = "prototype")    //singleton is default, request and prototype are 2 other types
-public class Nurse implements Staff{
+//@Scope("prototype")    //singleton is default, request and prototype are 2 other types
+@Component
+public class NurseAnno implements StaffAnno{
 	
 	private String name;
 
